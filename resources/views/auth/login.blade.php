@@ -29,7 +29,7 @@
                                             </div>
                                             <div class="form-check mb-3">
                                             <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                                                <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
+                                                <label class="form-check-label" for="inputRememberPassword">Lembre de mim</label>
                                                 <label class="form-check-label" for="remember">
                                                         {{ __('Remember Me') }}
                                                 </label>
