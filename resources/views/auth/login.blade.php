@@ -16,7 +16,7 @@
                                                         <strong>{{ $message }}</strong>
                                                     </span>
                                                 @enderror
-                                                <label for="inputEmail">{{ __('Email Address') }}</label>
+                                                <label for="inputEmail">Email</label>
                                             </div>
                                             <div class="form-floating mb-3">
                                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -25,22 +25,20 @@
                                                         <strong>{{ $message }}</strong>
                                                     </span>
                                                 @enderror
-                                                <label for="inputPassword">{{ __('Password') }}</label>
+                                                <label for="inputPassword">Senha</label>
                                             </div>
                                             <div class="form-check mb-3">
                                             <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                                                 <label class="form-check-label" for="inputRememberPassword">Lembre de mim</label>
-                                                <label class="form-check-label" for="remember">
-                                                        {{ __('Remember Me') }}
-                                                </label>
+                                                
                                             </div>
 
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 
                                                 @if (Route::has('password.request'))
-                                                    <a class="small" href="{{ route('password.request') }}">{{ __('Forgot Your Password?') }}</a>
+                                                    <a class="small" href="{{ route('password.request') }}">Esqueceu a senha?</a>
                                                 @endif
-                                                <button class="btn btn-primary" type="submit">{{ __('Login') }}</button>
+                                                <button class="btn btn-primary" type="submit">Entrar</button>
                                             </div>
                                         </form>
                                     </div>
